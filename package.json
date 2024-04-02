@@ -1,5 +1,5 @@
 {
-  "name": "astro-sphere",
+  "name": "niloy-portfolio",
   "type": "module",
   "version": "1.0.0",
   "scripts": {
@@ -32,5 +32,8 @@
     "tailwind-merge": "^2.2.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@iconify-icon/solid": "^2.0.0"
   }
 }

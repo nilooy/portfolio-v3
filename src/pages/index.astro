@@ -17,24 +17,40 @@ const projects = (await getCollection("projects"))
 
 const stack = [
   { 
-    text: "Astro", 
-    icon: "astro", 
-    href: "https://astro.build" 
-  },
-  { 
     text: "Javascript", 
-    icon: "javascript", 
-    href: "https://www.javascript.com" 
+    icon: "devicon:javascript", 
   },
   { 
     text: "Typescript", 
-    icon: "typescript", 
-    href: "https://www.typescriptlang.org" 
+    icon: "devicon:typescript",
+  },
+  { 
+    text: "React.js", 
+    icon: "logos:react", 
+  },
+  { 
+    text: "Next.js", 
+    icon: "cib:next-js", 
+  },
+  { 
+    text: "Node.js", 
+    icon: "vscode-icons:file-type-node", 
+  },
+  { 
+    text: "Postgresql", 
+    icon: "devicon:postgresql", 
+  },
+  { 
+    text: "Mysql", 
+    icon: "skill-icons:mysql-light", 
+  },
+  { 
+    text: "Google Cloud", 
+    icon: "devicon:googlecloud", 
   },
   { 
     text: "Tailwind", 
-    icon: "tailwind", 
-    href: "https://tailwindcss.com" 
+    icon: "vscode-icons:file-type-tailwind", 
   },
 ]
 ---
@@ -42,7 +58,7 @@ const stack = [
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
   
   <!-- HERO -->
-  <section class="relative h-screen w-full">
+  <section class="relative h-auto w-full">
     <!--<div id="planetcont" class='animate absolute inset-0 top-1/4 overflow-hidden'>-->
     <!--  <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[1px] bg-gradient-to-b from-black/25 dark:from-white/75 from-0% to-transparent to-5%'>-->
     <!--    <div id="planet" class='w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center'>-->
@@ -50,7 +66,7 @@ const stack = [
     <!--    </div>-->
     <!--  </div>-->
     <!--</div>-->
-    <div class="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+    <div class="h-[50rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
       {/* Radial gradient for the container to give a faded look */}
       <div class="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
       <div class="mx-auto max-w-screen-sm p-5 space-y-24 pb-16 animate absolute h-full w-full flex items-center justify-start">
@@ -68,7 +84,7 @@ const stack = [
             <!-- About Section -->
             <section class="animate max-w-xl">
               <article>
-                Full Stack Engineer with 5+ Years of experience in developing web-apps and API services. Experienced in user interface, testing, and debugging processes with the latest cutting edge development tools and procedures. Able to effectively self-manage during independent projects, as well as collaborate in a team setting.
+                CTO & Co-founder at Turbosite.io & Motionit.ai, I bring 9 years of tech leadership and innovation in the JavaScript ecosystem. Expert in AI-driven solutions, I champion teamwork, creativity, and learning. I’m driven to exceed tech boundaries.
               </article>
             </section>
             <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
@@ -111,28 +127,7 @@ const stack = [
 
 
 
-      <!-- Blog Preview Section -->
-      <section class="animate">
-        <div class="space-y-4">
-          <div class="flex justify-between">
-            <p class="font-semibold text-black dark:text-white">
-              Recent posts
-            </p>
-            <a href="/blog" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
-              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
-                All posts
-              </span>
-            </a>
-          </div>
-          <ul class="space-y-4">
-            {posts.map((post) => (
-              <li>
-                <ArrowCard entry={post} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+     
 
 
 
@@ -153,6 +148,29 @@ const stack = [
             {projects.map((project) => (
               <li>
                 <ArrowCard entry={project} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+       <!-- Blog Preview Section -->
+       <section class="animate">
+        <div class="space-y-4">
+          <div class="flex justify-between">
+            <p class="font-semibold text-black dark:text-white">
+              Recent posts
+            </p>
+            <a href="/blog" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                All posts
+              </span>
+            </a>
+          </div>
+          <ul class="space-y-4">
+            {posts.map((post) => (
+              <li>
+                <ArrowCard entry={post} />
               </li>
             ))}
           </ul>
