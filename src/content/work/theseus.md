@@ -2,7 +2,7 @@
 company: "Theseus"
 role: "Senior Software Engineer"
 dateStart: "01/05/2024"
-dateEnd: "Present"
+dateEnd: "Present (Contract)"
 ---
 
 Leading innovation in capital markets with a focus on enhancing privacy, efficiency, and analytics in our conversation data platform.
