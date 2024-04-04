@@ -1,0 +1,107 @@
+{
+    "basicInfo": {
+      "name": "Rezwan Ferdous Niloy",
+      "role": "Cofounder & CTO",
+      "email": "mdrezwanferdous@gmail.com",
+      "location": "Turin, Piedmont, Italy",
+      "LinkedIn": "https://www.linkedin.com/in/rezwanferdousniloy",
+      "portfolio": "https://nilooy.dev"
+    },
+    "skills": [
+        {
+          "skill": "Software Development",
+          "proficiency": "Expert"
+        },
+        {
+          "skill": "Google Cloud Platform (GCP)",
+          "proficiency": "Advanced"
+        },
+        {
+          "skill": "PostgreSQL",
+          "proficiency": "Advanced"
+        }
+      ],
+    "languages": [
+      {
+        "language": "English",
+        "proficiency": "Full Professional"
+      },
+      {
+        "language": "Italian",
+        "proficiency": "Full Professional"
+      }
+    ],
+    "certifications": [
+      "Ethical Hacking with JavaScript",
+      "React: Managing Complex Interactions",
+      "Docker on AWS",
+      "Migrating from REST to GraphQL",
+      "Advanced Node.js"
+    ],
+    "honorsAwards": [
+      "Google Developer Challenge Scholarship 2017- Front-end"
+    ],
+    "experience": [
+      {
+        "company": "Turbosite",
+        "role": "Co-founder and CTO",
+        "duration": "July 2023 - Present",
+        "location": "Paris, Île-de-France, France",
+        "description": "Developed and launched TurboSite, an AI-powered platform for creating intuitive high-converting landing pages."
+      },
+      {
+        "company": "Motionit.Ai",
+        "role": "Co-Founder and CTO",
+        "duration": "February 2023 - Present",
+        "location": "Paris, Île-de-France, France",
+        "description": "Built and launched Motionit.ai, an innovative platform that uses AI to generate dynamic, impactful slides and presentations."
+      },
+      {
+        "company": "Antler",
+        "role": "Entrepreneur in Residence",
+        "duration": "November 2022 - February 2023",
+        "location": "Paris, Île-de-France, France",
+        "description": "Participated in a 3 months long program in Paris, an on-ramp to venture capital, helping to launch startups from scratch."
+      },
+      {
+        "company": "Clym",
+        "role": "Full Stack Engineer",
+        "duration": "September 2022 - November 2022",
+        "description": "Worldwide regulation management service providing B2B2C service to tech companies."
+      },
+      {
+        "company": "Pathable Inc.",
+        "role": "Full Stack Engineer",
+        "duration": "September 2020 - August 2022",
+        "description": "Worked on a Virtual and Hybrid Event Platform, enhancing how people connect at business events."
+      },
+      {
+        "company": "Training 4U S.r.l.",
+        "role": "Full Stack Engineer",
+        "duration": "December 2018 - July 2020",
+        "location": "Torino, Piedmont, Italy",
+        "description": "Developed custom sales management and analytics tools for an IT Consultancy firm."
+      },
+      {
+        "company": "Solitude Agency",
+        "role": "Frontend Developer",
+        "duration": "June 2018 - December 2018",
+        "description": "Developed immersive web experiences and creative web-based designs for a web agency."
+      },
+      {
+        "company": "Media Service Italia",
+        "role": "Front end Developer",
+        "duration": "June 2017 - May 2018",
+        "location": "Torino, Piedmont, Italy",
+        "description": "Worked on E-commerce sites for a web agency specialized in development, design, and marketing."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Udacity",
+        "degree": "Nano Degree Front-End Web Developer",
+        "years": "2017 - 2018"
+      }
+    ]
+  }
+  

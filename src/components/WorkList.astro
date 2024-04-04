@@ -1,0 +1,48 @@
+---
+import { getCollection } from "astro:content"
+
+const collection = await getCollection("work")
+
+collection.sort((a, b) => new Date(b.data.dateStart).getTime() - new Date(a.data.dateStart).getTime())
+
+const work = await Promise.all(
+  collection.map(async (item) => {
+    const { Content } = await item.render()
+    return { ...item, Content }
+  })
+)
+
+function formatWorkDate(input: Date | string) {
+  if (typeof input === "string") return input
+
+  const month = input.toLocaleDateString("en-US", {
+    month: "short",
+  })
+
+  const year = new Date(input).getFullYear()
+  return `${month} ${year}`
+}
+
+const { isCompact } = Astro.props;
+---
+
+<ul>
+  { 
+    work.map((entry) => (
+      <li class="animate border-b border-black/10 dark:border-white/25 py-2 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none">
+        <div class="text-sm uppercase mb-4">
+          {formatWorkDate(entry.data.dateStart)} - {formatWorkDate(entry.data.dateEnd)}
+        </div>
+        <div class="text-black dark:text-white font-semibold">
+          {entry.data.company}
+        </div>
+        <div class="text-sm font-semibold">
+          {entry.data.role}
+        </div>
+        <article class={`prose dark:prose-invert ${isCompact ? 'pb-2' : ''}`}>
+          <entry.Content />
+        </article>
+      </li>
+    ))
+  }
+</ul>
