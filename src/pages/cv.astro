@@ -1,0 +1,171 @@
+---
+import "@styles/global.css"
+import { getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import ArrowCard from "@components/ArrowCard"
+import StackCard from "@components/StackCard.astro"
+import { SITE, SOCIALS } from "@consts"
+import BaseHead from "@components/BaseHead.astro"
+import WorkList from "@components/WorkList.astro"
+
+const posts = (await getCollection("blog"))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0,3)
+
+const projects = (await getCollection("projects"))
+  .filter(project => !project.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0,3)
+
+const stack = [
+  { 
+    text: "Javascript", 
+    icon: "devicon:javascript", 
+  },
+  { 
+    text: "Typescript", 
+    icon: "devicon:typescript",
+  },
+  { 
+    text: "React.js", 
+    icon: "logos:react", 
+  },
+  { 
+    text: "Next.js", 
+    icon: "cib:next-js", 
+  },
+  { 
+    text: "Node.js", 
+    icon: "vscode-icons:file-type-node", 
+  },
+  { 
+    text: "Postgresql", 
+    icon: "devicon:postgresql", 
+  },
+  { 
+    text: "Mysql", 
+    icon: "skill-icons:mysql-light", 
+  },
+  { 
+    text: "Google Cloud", 
+    icon: "devicon:googlecloud", 
+  },
+  { 
+    text: "Tailwind", 
+    icon: "vscode-icons:file-type-tailwind", 
+  },
+]
+
+const infos = [
+{
+NAME: 'Location',
+TEXT: 'Torino, Italy'
+},
+{
+NAME: 'Cell',
+TEXT: '+393207221599',
+HREF: 'tel:+393207221599'
+},
+...SOCIALS, 
+ 
+]
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={`${'asdad'} | ${SITE.TITLE}`} description={'asdad'} />
+  </head>
+  <body>
+    <main>
+        <div class="max-w-screen-md m-auto flex my-20" title="Home">
+            <div class="w-[80%] border-r pr-2">
+                <!-- HERO -->
+                <section class="relative h-auto w-full mt-4">
+                    <div>
+                        <h1 class="text-2xl">Md Rezwan Ferdous Niloy</h1>
+                        <p class="text-xl font-bold">Senior Fullstack Engineer @ Theseus AI</p>
+                        <p class="text-sm my-2">
+                            As a Senior Full-Stack Engineer at Theseus AI with over 9 years in tech, I specialize in developing innovative web applications. My expertise in the JavaScript ecosystem and leadership in launching transformative platforms showcases my passion for tackling complex problems and driving technological advancements.
+                        </p>
+                    </div>
+                    
+              
+              
+                <div class="relative bg-white dark:bg-black">
+                  <div class="mx-auto mt-4 space-y-24 pb-16">
+              
+                    <!-- Work Section -->
+                    <section>
+                      <div class="space-y-4">
+                        <div class="flex justify-between">
+                          <p class="font-semibold text-black dark:text-white">
+                            Experiences
+                          </p>
+                        </div>
+                        <ul class="space-y-4">
+                            <WorkList isCompact={true}/>
+                        </ul>
+                      </div>
+                    </section>
+    
+                    
+                  </div>
+                </div>
+                </div>
+            <div class="w-[20%] pl-2">
+                <div class="grid grid-cols-5 gap-y-1 mt-4 auto-cols-min text-[13px]">
+                    {infos.map(info => (
+                      <div class="col-span-2 flex items-center gap-1">
+                        <span class="whitespace-nowrap">
+                          {info.NAME}
+                        </span>
+                      </div>
+                      <div class="col-span-3">
+                        <a href={info.HREF} target="_blank" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+                          <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                            {info.TEXT}
+                          </span>
+                        </a>
+                      </div>
+                    ))}
+                </div>
+                <div class="mt-4">
+                    <p class="text-md font-bold">Skills</strong>
+                    <ul class="list-disc ml-2">
+                      {stack.map(item => (
+                          <li class="text-sm">{item.text}</li>
+                      ))}
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-md font-bold">Certifications</strong>
+                    <ul class="list-disc ml-2">
+                          <li class="text-sm">Ethical Hacking with JavaScript</li>
+                          <li class="text-sm">React: Managing Complex</li>
+                          <li class="text-sm">Interactions</li>
+                          <li class="text-sm">Docker on AWS</li>
+                          <li class="text-sm">Migrating from REST to GraphQL</li>
+                          <li class="text-sm">Advanced Node.js</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-md font-bold">Skills</strong>
+                    <ul class="list-disc ml-2">
+                          <li class="text-sm">English (Fluent)</li>
+                          <li class="text-sm">Italian (Professional)</li>
+                    </ul>
+                </div>
+                
+            </div>
+           
+        
+        </div>
+    </main>
+  </body>
+</html>
+
+
