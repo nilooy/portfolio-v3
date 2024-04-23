@@ -119,14 +119,14 @@ HREF: 'tel:+393207221599'
                 </div>
                 </div>
             <div class="w-[30%] pl-4">
-                <div class="grid grid-cols-5 gap-y-1 mt-4 auto-cols-min text-[13px]">
+                <div class="grid grid-cols-6 gap-y-1 mt-4 auto-cols-min text-[13px]">
                     {infos.map(info => (
                       <div class="col-span-2 flex items-center gap-1">
                         <span class="whitespace-nowrap">
                           {info.NAME}
                         </span>
                       </div>
-                      <div class="col-span-3">
+                      <div class="col-span-4">
                         <a href={info.HREF} target="_blank" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
                           <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
                             {info.TEXT}
