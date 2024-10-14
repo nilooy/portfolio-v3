@@ -1,6 +1,6 @@
 ---
 company: "Theseus"
-role: "Senior Software Engineer (Contract)"
+role: "Senior Fullstack Engineer (Contract)"
 dateStart: "10/01/2023"
 dateEnd: "01/30/2024"
 ---
