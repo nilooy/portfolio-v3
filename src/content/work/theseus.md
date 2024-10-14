@@ -1,11 +1,11 @@
 ---
 company: "Theseus"
-role: "Senior Software Engineer"
-dateStart: "01/05/2024"
-dateEnd: "Present (Contract)"
+role: "Senior Software Engineer (Contract)"
+dateStart: "10/01/2023"
+dateEnd: "01/30/2024"
 ---
 
-Leading innovation in capital markets with a focus on enhancing privacy, efficiency, and analytics in our conversation data platform.
+Led the development of innovative solutions for Theseus, a conversation analytics platform. Focused on improving privacy, efficiency, and analytics in capital markets by optimizing platform functionality.
 
-- Product Enhancement: Spearheaded core functionality improvements, significantly boosting platform efficacy and user productivity.
-- Technical Leadership: Utilized JavaScript expertise to drive ongoing platform advancements, focusing on user-centric developments.
+- Led innovation efforts in capital market data analysis, enhancing privacy and platform efficiency.
+- Improved conversation data processing, analytics, and reporting to drive key business insights.

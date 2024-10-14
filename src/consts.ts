@@ -3,13 +3,13 @@ import type { Site, Page, Links, Socials } from "@types"
 // Global
 export const SITE: Site = {
   TITLE: "Niloy",
-  DESCRIPTION: "I'm a fullstack engineer",
+  DESCRIPTION: "I'm a Senior Fullstack Engineer",
   AUTHOR: "niloy",
 }
 
 // Work Page
 export const WORK: Page = {
-  TITLE: "Work",
+  TITLE: "Experiences",
   DESCRIPTION: "Places I have worked.",
 }
 
@@ -38,8 +38,8 @@ export const LINKS: Links = [
     HREF: "/", 
   },
   { 
-    TEXT: "Work", 
-    HREF: "/work", 
+    TEXT: "Experience", 
+    HREF: "/work",
   },
   { 
     TEXT: "Blog", 

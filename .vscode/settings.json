@@ -1,5 +1,10 @@
 {
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#151392",
+    "titleBar.activeBackground": "#1D1ACC",
+    "titleBar.activeForeground": "#FDFDFF"
   }
 }
