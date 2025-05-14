@@ -4,10 +4,15 @@ summary: "An AI-powered platform for creating intuitive, high-converting landing
 date: "July 2023"
 draft: false
 tags:
+- Next.js
+- Typescript
+- Node.js
+- PostgreSQL
+- Redis
+- Google Cloud
 - AI
-- Web Design
-- User Experience
-- Lead Generation
+- Tailwind CSS
+
 demoUrl: https://turbosite.io
 repoUrl: https://github.com/yourusername/turbosite
 ---

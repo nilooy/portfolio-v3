@@ -4,10 +4,14 @@ summary: "A groundbreaking platform utilizing AI to generate dynamic, impactful 
 date: "February 2023"
 draft: false
 tags:
+- Next.js
+- Typescript
+- Node.js
+- PostgreSQL
+- Redis
+- Google Cloud
 - AI
-- Presentations
-- Productivity
-- Engagement
+- Tailwind CSS
 demoUrl: https://motionit.ai
 repoUrl: https://github.com/yourusername/motionit.ai
 ---

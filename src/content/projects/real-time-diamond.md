@@ -6,7 +6,6 @@ draft: false
 tags:
 - React
 - Webgl
-- Babylon.js
 - Opensource
 repoUrl: https://github.com/nilooy/react-babylonjs-diamond-render-refraction
 ---

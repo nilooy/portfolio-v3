@@ -5,12 +5,9 @@ date: "Dec 14 2022"
 draft: false
 tags:
 - Next.js
-- Langchain
-- Mermaid
-- DaisyUI
+- Typescript
 - AI
-- GPT-3.5
-- Flowchart
+- Tailwind CSS
 - Opensource
 repoUrl: https://github.com/nilooy/flowgpt
 ---
