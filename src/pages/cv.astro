@@ -1,9 +1,6 @@
 ---
 import "@styles/global.css"
 import { getCollection } from "astro:content"
-import PageLayout from "@layouts/PageLayout.astro"
-import ArrowCard from "@components/ArrowCard"
-import StackCard from "@components/StackCard.astro"
 import { SITE, SOCIALS } from "@consts"
 import BaseHead from "@components/BaseHead.astro"
 import WorkList from "@components/WorkList.astro"
@@ -64,12 +61,12 @@ const stack = [
 const infos = [
 {
 NAME: 'Location',
-TEXT: 'Torino, Italy'
+TEXT: 'Amsterdam, Netherlands'
 },
 {
 NAME: 'Cell',
-TEXT: '+393207221599',
-HREF: 'tel:+393207221599'
+TEXT: '+31685251384',
+HREF: 'tel:+31685251384'
 },
 ...SOCIALS, 
  
@@ -77,7 +74,7 @@ HREF: 'tel:+393207221599'
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <BaseHead title={`${'CV'} | ${SITE.TITLE}`} description={''} />
   </head>
@@ -89,9 +86,9 @@ HREF: 'tel:+393207221599'
                 <section class="relative h-auto w-full mt-4">
                     <div>
                         <h1 class="text-2xl">Md Rezwan Ferdous Niloy</h1>
-                        <p class="text-xl font-bold">Senior Fullstack Engineer @ Theseus AI</p>
+                        <p class="text-xl font-bold">Senior Frontend Software Engineer @ Telnyx</p>
                         <p class="text-sm my-2">
-                            As a Senior Full-Stack Engineer at Theseus AI with over 7 years in tech, I specialize in developing innovative web applications. My expertise in the JavaScript ecosystem and leadership in launching transformative platforms showcases my passion for tackling complex problems and driving technological advancements.
+                            As a Senior Frontend Software Engineer at Telnyx with over 7 years in tech, I specialize in developing innovative web applications and developer tools. My expertise in the JavaScript ecosystem and experience maintaining large-scale platforms showcases my passion for creating exceptional user experiences and empowering developer communities.
                         </p>
                     </div>
                     
